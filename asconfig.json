@@ -2,12 +2,12 @@
     "extends": "ask-lang/asconfig.json",
     "targets": {
         "debug": {
-            "binaryFile": "build/flipper.wasm",
-            "textFile": "build/flipper.wat"
+            "binaryFile": "build/nft.wasm",
+            "textFile": "build/nft.wat"
         },
         "release": {
-            "binaryFile": "build/flipper.optimized.wasm",
-            "textFile": "build/flipper.optimized.wat"
+            "binaryFile": "build/nft.optimized.wasm",
+            "textFile": "build/nft.optimized.wat"
         }
     }
 }

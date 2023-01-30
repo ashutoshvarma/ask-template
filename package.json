@@ -5,14 +5,19 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "ask-lang": "^0.4.0-rc3"
+    "ask-lang": "^0.4.0"
   },
   "devDependencies": {
-    "ask-transform": "^0.4.0-rc3",
+    "ask-transform": "^0.4.0",
     "assemblyscript": "^0.19"
   },
   "scripts": {
     "build": "ASK_CONFIG=./askconfig.json asc --config asconfig.json",
     "debug": "DEBUG=* ASK_CONFIG=./askconfig.json asc --config asconfig.json"
+  },
+  "packageManager": "yarn@3.3.1",
+  "resolutions": {
+    "ask-contract-runtime@0.4.0": "patch:ask-contract-runtime@npm%3A0.4.0#./.yarn/patches/ask-contract-runtime-npm-0.4.0-3a1dc4e3ab.patch",
+    "ask-lang@^0.4.0": "patch:ask-lang@npm%3A0.4.0#./.yarn/patches/ask-lang-npm-0.4.0-830b1190bb.patch"
   }
 }
